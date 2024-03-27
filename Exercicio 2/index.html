@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+
+
+
+    <center>
+        <h2>FullCar</h2>
+    </center>
+
+    <p>Cadastre Seu veiculo: </p>
+
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+
+
+
+
+        <!-- Cadastro de Veiculo:-->
+        <fieldset>
+            <legend>Veiculo:</legend>
+
+            <label>Tipo:</label>
+            <label>
+                <input type="radio" name="tipo" id="novo" value="novo" />Novo
+            </label>
+            <label>
+                <input type="radio" name="tipo" id="novo" value="novo" />Usado
+            </label> <br /><br />
+
+            <label>Tipo:</label>
+            <select name="categoria" id="categoria" estado>
+                <option value="hatch">Hatch</option>
+                <option value="suv">SUV</option>
+                <option value="seda">Sedã </option>
+                <option value="picape">Picape</option>
+                <option value="utilitário">Utilitário</option>
+                <option value="perua">Perua</option>
+                <option value="minivan">Minivan</option>
+                <option value="conversível">Conversível</option>
+                <option value="outros">outros</option>
+            </select>
+
+            <label>|</label>
+
+            <label>Marca</label>
+            <select name="marca" id="marca" estado>
+                <option value="fiat">Fiat</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="volskwagen">Volskwagen</option>
+                <option value="citroen">Citroën</option>
+                <option value="renault">Renault</option>
+                <option value="kia">Kia</option>
+                <option value="outros">outros</option>
+            </select>
+
+            <label>|</label>
+
+            <label>Modelo: </label>
+            <input type="text" id="modelo" name="Modelo" placeholder="logan" required />
+
+            <label>|</label>
+
+            <label>Placa: </label>
+            <input type="text" id="placa" name="placa" placeholder="QTP5-F71" required /> <br /><br />
+
+
+            <label>Quilometragem: </label>
+            <input type="number" id="quilometragem" name="qsuilometragem" min="0" required /> km |
+
+            <label for="valor">Preço:</label>
+            <input type="number" id="valor" name="valor" min="0"> <br /><br />
+
+
+            <label>Câmbio:</label>
+            <label>
+                <input type="radio" name="cambio" id="manual" value="manual" /> Manual
+            </label>
+            <label>
+                <input type="radio" name="cambio" id="automatico" value="automatico" /> Automático
+            </label>
+
+            <label>|</label>
+
+
+            <label>Blindagem:</label>
+            <label>
+                <input type="radio" name="blindagem" id="sim" value="sim" /> Sim
+            </label>
+            <label>
+                <input type="radio" name="blindagem" id="nao" value="nao" /> Não
+            </label> </br /><br />
+
+
+            <label for="valor">Numero de Portas:</label>
+            <input type="number" id="numeroPortas" name="numeroPortas" min="0" max="4">
+
+            <label>|</label>
+
+            <label>Combustível:</label>
+            <select id="combustivel" name="tipoGasolina">
+                <option value="gasolina">Gasolina</option>
+                <option value="etanol">Etanol</option>
+                <option value="flex">Flex</option>
+                <option value="outros">Outros</option>
+            </select> <br /><br />
+
+
+            <label>Descrição: </label> <br />
+            <textarea rows="7" cols="70" nome="descricao" id="descricao" maxlength="400"
+                placeholder="digite aqui..."></textarea><br /> <br />
+
+
+            <label>Foto: </label><br />
+            <input type="file" accept=".jpg,.jpeg,.png,.pdf" id="Foto" name="Foto"> <br /><br />
+
+
+
+            <!--botões-->
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+          
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
